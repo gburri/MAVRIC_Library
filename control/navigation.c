@@ -248,7 +248,6 @@ static void navigation_set_speed_command(float rel_pos[], navigation_t* navigati
 		}
 		
 		navigation->wpt_nav_controller.clip_max = navigation->cruise_speed;
-		
 		v_desired = pid_controller_update_dt(&navigation->wpt_nav_controller, norm_rel_dist, navigation->dt);
 	}
 	else
